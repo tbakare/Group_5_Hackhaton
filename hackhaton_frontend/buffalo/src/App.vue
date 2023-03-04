@@ -10,11 +10,9 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="Buffalo STI Testing" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/">My Visits</RouterLink>
         <RouterLink to="/new-visit">New Visit</RouterLink>
         <RouterLink to="/visit_history">Visit History</RouterLink>
-        <RouterLink to="/my-visits">My Visits</RouterLink>
-
       </nav>
     </div>
   </header>

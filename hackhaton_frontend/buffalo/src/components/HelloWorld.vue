@@ -5,6 +5,13 @@ defineProps({
     required: true
   }
 })
+
+const routes = {
+  '/': Home,
+  '/about': About
+
+}
+
 </script>
 
 <template>

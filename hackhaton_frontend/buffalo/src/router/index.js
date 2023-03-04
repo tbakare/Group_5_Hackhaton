@@ -6,13 +6,18 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'my-visits',
+      component: () => import('../views/MyVisitsView.vue')
     },
     {
       path: '/visit_history',
       name: 'visit_history',
       component: () => import('../views/VisitHistory.vue')
+    },
+    {
+      path: '/visitinfo/:id',
+      name: 'visitinfo',
+      component: () => import('../views/VisitInfo.vue')
     },
     {
       path: '/about',
@@ -26,11 +31,6 @@ const router = createRouter({
       path: '/new-visit',
       name: 'new-visit',
       component: () => import('../views/NewVisitView.vue')
-    },
-    {
-      path: '/my-visits',
-      name: 'my-visits',
-      component: () => import('../views/MyVisitsView.vue')
     }
   ]
 })

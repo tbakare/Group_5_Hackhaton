@@ -10,13 +10,16 @@ import SupportIcon from './icons/IconSupport.vue'
 <template>
   <WelcomeItem>
     <template #icon>
+      + <DocumentationIcon />
+    </template>
+    <template #heading><RouterLink to="/new-visit">New Visit</RouterLink></template>
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Documentation</template>
-
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
+    <template #heading><RouterLink to="/visit_history">Visit History</RouterLink></template>
   </WelcomeItem>
 
   <WelcomeItem>

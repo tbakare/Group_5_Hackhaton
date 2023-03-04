@@ -10,18 +10,25 @@ import DocumentationIcon from './icons/IconDocumentation.vue'
 <!-- template -->
 
 <MyVisitsItem>
-    <template #icon>
-      <DocumentationIcon />
-      Gloop
-      
-    </template>
-    <template #heading>Documentation</template>
-    <button><img src=".\icons\img\Plus.png">New Visit</button>
-    
-    Text
+
+    <template #heading>New Visit</template>
+    <template #icon></template>
+    <button><img src=".\icons\img\Plus.png"></button>
 </MyVisitsItem>
 
-<button>hello</button>
+<MyVisitsItem>
+    
+    <template #icon></template>
+    <template #heading>Previous Visits</template>
+    <button><img src=".\icons\img\Previous.png"></button>
+</MyVisitsItem>
+
+<MyVisitsItem>
+    
+    <template #icon></template>
+    <template #heading>Patient Information</template>
+    <button><img src=".\icons\img\Info.png"></button>
+</MyVisitsItem>
 </template>
 
 <style>

@@ -1,11 +1,9 @@
 <template>
   <Carousel :items-to-show="2.5" :wrap-around="true">
     <Slide v-for="item in listItems" :key="item.id">
-      <div class="carousel__item">
-        <RouterLink to="/visitinfo/{{ item.id }}">{{ item.name }}</RouterLink><br>{{ item.date }}
-      </div>
-
+      <div class="carousel__item">{{ item.title }}</div>
     </Slide>
+
     <template #addons>
       <Navigation />
       <Pagination />
@@ -19,8 +17,7 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 export default {
   data() {
     return {
-      //listItems: this.getData(),
-      listItems: [{ "date": "03-04-23", "name": "Visit 1", "id": "1" }, { "date": "02-04-23", "name": "Visit 2", "id": "2" }, { "date": "02-03-23", "name": "Visit 3", "id": "3" }]
+      listItems: this.getData(),
     }
   },
   methods: {

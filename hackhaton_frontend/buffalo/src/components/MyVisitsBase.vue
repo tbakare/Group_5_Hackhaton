@@ -33,4 +33,13 @@ import DocumentationIcon from './icons/IconDocumentation.vue'
 
 <style>
 /* style */
+    .myvisit-item{
+        justify-content: center;
+        align-items: center;
+    }
+    .myvisit-details{
+        justify-content: center;
+        align-items: center;
+    }
+    
 </style>

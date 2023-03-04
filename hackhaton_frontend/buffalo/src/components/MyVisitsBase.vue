@@ -33,4 +33,5 @@ import DocumentationIcon from './icons/IconDocumentation.vue'
 
 <style>
 /* style */
+
 </style>
